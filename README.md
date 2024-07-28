@@ -1,50 +1,97 @@
-# Resume Expert: Gemini LLM 
 
-## Project Overview
+# Root Cause Analyzer Application
 
- Job Application process is no doubt daunting process and resume is the document which represents ourselves to the HR's. When ever we apply for a job and we get a reject without any feedback feels sad right. So i took this as a motivation to my project I created an application using Google generative AI [GEMINI] and built an application where you can get your feedback, and what are the keywords that are missing in your Resume.
+## Overview
 
-## Objectives
-
-- To provide an intuitive tool for job seekers to match their resumes with job descriptions.
-- To leverage advanced AI technology for analyzing and providing feedback on resumes.
-- To offer a user-friendly interface that simplifies the resume review process.
+Welcome to the Root Cause Analyzer Application repository! This project leverages the power of generative AI and modular programming to provide a comprehensive solution for performing root cause analysis. The application allows users to analyze problems, identify root causes, and suggest actionable solutions to prevent recurrence.
 
 ## Features
 
-- **Resume Upload:** Users can upload their resume in PDF format.
-- **Job Description Input:** A text input field allows users to paste the job description they are targeting.
-- **AI-Powered Analysis:** Utilizing Gemini AI, the application provides a detailed analysis of the resume in context with the job description.
-- **Feedback on Different Aspects:**
-  - **Resume Review:** General feedback on the resume.
-  - **Skills Improvement:** Suggestions for skills enhancement.
-  - **Keywords Analysis:** Identification of missing keywords in the resume.
-  - **Match Percentage:** A percentage score indicating how well the resume matches the job description.
+- **Modular Programming:** The application is designed using modular programming principles, ensuring flexibility and ease of maintenance.
+- **Generative AI:** Utilizes advanced AI models to enhance the accuracy and efficiency of root cause analysis.
+- **User-Friendly Interface:** Simple and intuitive interface for seamless user experience.
+- **Comprehensive Analysis Tools:** Includes various RCA techniques such as 5 Whys, Fishbone Diagram, and more.
+- **Solution Suggestion Engine:** Generates alternative solutions based on identified root causes.
 
-## Technologies Used
+## Getting Started
 
-- **Streamlit:** For creating the web application interface.
-- **Google Generative AI (Gemini Pro Vision):** For processing and analyzing the resume content.
-- **Python:** The primary programming language used for backend development.
-- **PDF2Image & PIL:** For handling PDF file conversions and image processing.
+### Prerequisites
 
-## Challenges Faced
+- Python 3.8 or higher
+- pip (Python package installer)
 
-- **Integration with Gemini AI:** Ensuring seamless communication between the Streamlit interface and Gemini AI model.
-- **PDF Handling:** Efficiently converting PDF content to a format suitable for analysis by the AI model.
-- **User Experience Optimization:** Creating an intuitive and responsive UI.
+### Installation
 
-## Future Enhancements
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/root-cause-analyzer.git
+   cd root-cause-analyzer
+   ```
 
-- **Support for Multiple Pages:** Extend the functionality to handle multi-page resumes.
-- **Customizable Feedback Categories:** Allow users to choose specific areas for feedback.
-- **Interactive Resume Editing:** Integrate a feature to edit the resume directly based on the AI's suggestions.
-- **Enhanced Error Handling:** Improve the system's robustness in handling various file formats and user inputs.
+2. **Create a virtual environment:**
+   ```sh
+   python -m venv venv
+   ```
 
-## Conclusion
+3. **Activate the virtual environment:**
+   - On Windows:
+     ```sh
+     venv\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```sh
+     source venv/bin/activate
+     ```
 
-The **Resume Expert** Streamlit application stands as a significant tool in bridging the gap between job seekers and their ideal job roles. By harnessing the power of AI, it provides valuable insights and recommendations, making it a pivotal step in enhancing the job application process.
+4. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
----
+### Running the Application
 
-*Created by koushik*
+1. **Navigate to the app directory:**
+   ```sh
+   cd app
+   ```
+
+2. **Run the Streamlit app:**
+   ```sh
+   streamlit run app.py
+   ```
+
+3. **Open the application:**
+   - The application will open in your default web browser. If not, navigate to `http://localhost:8501` in your browser.
+
+## Usage
+
+1. **Upload Document:**
+   - Upload the document describing the problem or incident.
+   
+2. **Perform Root Cause Analysis:**
+   - Use the provided tools to identify root causes of the problem.
+   
+3. **Generate Solutions:**
+   - Get suggestions for alternative solutions based on the analysis.
+   
+4. **Review and Implement:**
+   - Review the suggested solutions and implement the most suitable ones.
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Thank you to the open-source community for providing invaluable resources and tools.
+- Special thanks to the developers and contributors who have made this project possible.
