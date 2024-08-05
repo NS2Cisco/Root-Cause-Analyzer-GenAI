@@ -1,0 +1,8 @@
+1) First always fork the GIT project to your workspace
+2) Clone the forked GIT Project in to you Visual Studio Workspace
+3) Add your Google API Key in to you .env properties file
+4) Create a virtual conda python environment in the top space bar "> Create Python Environment"
+5) Do pip install dotenv 
+6) Do pip install of all python packages mentioned in requirments.txt file
+7) To run the program use the command "streamlit run app.py" file (If your .py file is different name use that)
+8) It will open the browser and you can fulfill all your functionalities
