@@ -44,6 +44,7 @@ st.set_page_config(page_title="Root Cause Analyzer")
 st.header("Root Cause Analysis")
 st.subheader('This Application helps you in Finding Root Cause Analysis with help of GEMINI AI [LLM]')
 input_text = st.text_input("Any Specific Instructions: ", key="input")
+input_text2 = st.text_input("ROOT CAUSE CONTENT: ", key="input2")
 uploaded_file = st.file_uploader("Upload your Docs(PDF)...", type=["pdf"])
 pdf_content = ""
 
@@ -57,6 +58,8 @@ submit2 = st.button("Suggest me some different approaches")
 input_promp = st.text_input("Queries: Feel Free to Ask here")
 
 submit5 = st.button("Answer My Query")
+
+submit6 = st.button("Root Cause Analysis on text box")
 
 input_prompt1 = """
 To perform a thorough root cause analysis (RCA) of the problem or incident described in the uploaded document. The goal is to identify the underlying causes and propose actionable solutions to prevent recurrence.
@@ -175,6 +178,11 @@ elif submit5:
         st.write(response)
     else:
         st.write("Please upload a PDF file to proceed.")
+
+elif submit6:
+    response = get_gemini_response(input_promp,pdf_content=input_text2,prompt=input_text)
+    st.subheader("The Response is")
+    st.write(response)
 
 footer = """
 ---
